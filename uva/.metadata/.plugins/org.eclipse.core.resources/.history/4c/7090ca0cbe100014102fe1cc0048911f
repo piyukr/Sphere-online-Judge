@@ -1,0 +1,80 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+priority_queue<ii, vector<ii>, greater<ii> > pq;
+vi dist;
+
+int main() {
+	int l, b, c, m, n, i, a, x, y, j, k, t, sum = 0, cases = 1, maximum,
+			minimum, start, count1 = 0;
+	FILE *fi, *fo;
+	fi = freopen("text", "r", stdin);
+	fo = freopen("output", "w+", stdout);
+	while (1) {
+		scanf("%d", &n);
+		if (n == 0)
+			break;
+		while (!pq.empty())
+			pq.pop();
+		scanf("%d", &start);
+		adj_list.assign(n + 1, vii());
+		while (1) {
+			scanf("%d %d", &a, &b);
+			if (a == 0 && b == 0)
+				break;
+			adj_list[a].push_back(ii(-1, b));
+		}
+		/*for (i = 0; i < adj_list.size(); i++) {
+		 printf("%d->",i);
+		 for (j = 0; j < adj_list[i].size(); j++)
+		 printf("%d ", adj_list[i][j].first);
+		 printf("\n");
+		 }*/
+		pq.push(ii(0, start));
+		dist.assign(n + 1, 9999);
+		dist[start] = 0;
+		minimum = 9999;
+		int minpt;
+		while (!pq.empty()) {
+			ii front = pq.top();
+			pq.pop();
+			int d = front.first, u = front.second;
+			if (d > dist[u])
+				continue;
+			for (j = 0; j < (int) adj_list[u].size(); j++) {
+				ii v = adj_list[u][j];
+				if (dist[u] + v.second < dist[v.first]) {
+					dist[v.first] = dist[u] + v.second;
+					pq.push(ii(dist[v.first], v.first));
+					if (dist[v.first] < minimum) {
+						minimum = dist[v.first];
+						minpt = v.first;
+					}
+				}
+			}
+		}
+		printf("The longest path from %d has length %d, finishing at %d.\n\n",
+				start, -1 * minimum, minpt);
+	}
+	return 0;
+}

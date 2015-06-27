@@ -1,0 +1,49 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+
+int main() {
+	int l, a, b, c,d, m, n, i, x, y, j, k, t, sum = 0, cases = 1, maximum,
+			minimum, count1 = 0;
+	string s;
+	freopen("text", "r", stdin);
+	scanf("%d", &t);
+	while (t--) {
+		cin >> s;
+		scanf("%d", &d);
+		count1 = 0, d++;
+		sort(s.begin(), s.end());
+		do {
+			if (count1 == n) {
+				cout << s << endl;
+				break;
+			}
+			count1++;
+		} while (next_permutation(s.begin(), s.end()));
+	}
+	return 0;
+}

@@ -1,0 +1,46 @@
+02:41:56 **** Incremental Build of configuration Debug for project 988 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:31:6: warning: unused variable ‘l’ [-Wunused-variable]
+../main.cpp:31:12: warning: unused variable ‘b’ [-Wunused-variable]
+../main.cpp:31:15: warning: unused variable ‘c’ [-Wunused-variable]
+../main.cpp:31:18: warning: unused variable ‘m’ [-Wunused-variable]
+../main.cpp:31:30: warning: unused variable ‘y’ [-Wunused-variable]
+../main.cpp:31:36: warning: unused variable ‘k’ [-Wunused-variable]
+../main.cpp:31:42: warning: unused variable ‘sum’ [-Wunused-variable]
+../main.cpp:31:51: warning: unused variable ‘cases’ [-Wunused-variable]
+../main.cpp:31:62: warning: unused variable ‘maximum’ [-Wunused-variable]
+../main.cpp:32:4: warning: unused variable ‘minimum’ [-Wunused-variable]
+../main.cpp:32:13: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../main.cpp
+ 
+Building target: 988
+Invoking: GCC C++ Linker
+g++  -o "988"  ./main.o ./new_main.o   
+./new_main.o: In function `__gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator()':
+/home/piyush/eclipse_programs/uva/988/Debug/../new_main.cpp:29: multiple definition of `adj_list'
+./main.o:/home/piyush/eclipse_programs/uva/988/Debug/../main.cpp:30: first defined here
+./new_main.o: In function `__gnu_cxx::new_allocator<std::pair<int, int> >::deallocate(std::pair<int, int>*, unsigned long)':
+/home/piyush/eclipse_programs/uva/988/Debug/../new_main.cpp:32: multiple definition of `dist'
+./main.o:/home/piyush/eclipse_programs/uva/988/Debug/../main.cpp:33: first defined here
+./new_main.o: In function `std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > >::~vector()':
+/home/piyush/eclipse_programs/uva/988/Debug/../new_main.cpp:38: multiple definition of `grid'
+./main.o:/home/piyush/eclipse_programs/uva/988/Debug/../main.cpp:36: first defined here
+/usr/bin/ld: Warning: size of symbol `grid' changed from 900000000 in ./main.o to 4000000 in ./new_main.o
+./new_main.o:(.bss+0x3d0940): multiple definition of `choices'
+./main.o:(.bss+0x35a4e940): first defined here
+/usr/bin/ld: Warning: size of symbol `choices' changed from 60000 in ./main.o to 4000 in ./new_main.o
+./new_main.o:(.bss+0x3d18e0): multiple definition of `dead_state'
+./main.o:(.bss+0x35a5d3a0): first defined here
+/usr/bin/ld: Warning: size of symbol `dead_state' changed from 60000 in ./main.o to 4000 in ./new_main.o
+./new_main.o: In function `__gnu_cxx::new_allocator<std::pair<int, int> >::~new_allocator()':
+/home/piyush/eclipse_programs/uva/988/Debug/../new_main.cpp:29: multiple definition of `main'
+./main.o:/home/piyush/eclipse_programs/uva/988/Debug/../main.cpp:30: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [988] Error 1
+
+02:41:57 Build Finished (took 1s.11ms)
+

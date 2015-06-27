@@ -1,0 +1,29 @@
+01:47:21 **** Incremental Build of configuration Debug for project 11385 ****
+make all 
+Building file: ../11385.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"11385.d" -MT"11385.d" -o "11385.o" "../11385.cpp"
+../11385.cpp: In function ‘int main()’:
+../11385.cpp:59:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../11385.cpp:30:16: warning: unused variable ‘l’ [-Wunused-variable]
+../11385.cpp:30:19: warning: unused variable ‘a’ [-Wunused-variable]
+../11385.cpp:30:22: warning: unused variable ‘b’ [-Wunused-variable]
+../11385.cpp:30:25: warning: unused variable ‘c’ [-Wunused-variable]
+../11385.cpp:30:28: warning: unused variable ‘m’ [-Wunused-variable]
+../11385.cpp:30:40: warning: unused variable ‘y’ [-Wunused-variable]
+../11385.cpp:30:43: warning: unused variable ‘j’ [-Wunused-variable]
+../11385.cpp:30:46: warning: unused variable ‘k’ [-Wunused-variable]
+../11385.cpp:30:52: warning: unused variable ‘sum’ [-Wunused-variable]
+../11385.cpp:30:61: warning: unused variable ‘cases’ [-Wunused-variable]
+../11385.cpp:31:13: warning: unused variable ‘minimum’ [-Wunused-variable]
+../11385.cpp:31:22: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../11385.cpp
+ 
+Building target: 11385
+Invoking: GCC C++ Linker
+g++  -o "11385"  ./11385.o   
+Finished building target: 11385
+ 
+
+01:47:22 Build Finished (took 667ms)
+

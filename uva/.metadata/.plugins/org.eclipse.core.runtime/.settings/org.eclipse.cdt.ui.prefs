@@ -1,0 +1,15 @@
+autoIndent=false
+content_assist_autoactivation_delay=1
+content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
+eclipse.preferences.version=1
+editor_folding_preprocessor_enabled=true
+ensureNewlineAtEOF=false
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.ProblemHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.CMacroExpansionHover;0;org.eclipse.cdt.ui.CSourceHover;131072;org.eclipse.cdt.ui.AnnotationHover;0;
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.ProblemHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.CMacroExpansionHover;\!0;org.eclipse.cdt.ui.CSourceHover;Shift;org.eclipse.cdt.ui.AnnotationHover;\!0;
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.core.cxxSource.contenttype_context" deleted\="false" description\="Default template for newly created C++ source files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.cppsourcefile" name\="Default C++ source template">${includes}\n\#include &lt;cstdlib&gt;\n\#include &lt;cstdio&gt;\n\#include &lt;iostream&gt;\n\#include &lt;sstream&gt;\n\#include &lt;cstring&gt;\n\#include &lt;string&gt;\n\#include &lt;utility&gt;\n\#include &lt;stack&gt;\n\#include &lt;queue&gt;\n\#include &lt;vector&gt;\n\#include &lt;map&gt;\n\#include &lt;algorithm&gt;\n\#include &lt;functional&gt;\n\#include &lt;cmath&gt;\n\#include &lt;list&gt;\n\#include &lt;set&gt;\n${namespace_begin}\nusing namespace std;\n\ntypedef pair&lt;int,int&gt; ii;\ntypedef vector&lt;int&gt; vi;\ntypedef vector&lt;ii&gt; vii;\n\#define rep(i,a,b) for((i)\=(a);(i)&lt;\=(b);(i)++)\nvector&lt;vii&gt; adj_list;\n\nvi dist;\n\n\t//BEFORE SUBMISSION, COMMENT OUT THIS LINE--&gt; freopen("text", "r", stdin);\n\nint main(){\n\tint l,a, b, c, m, n, i, x, y, j, k, t, sum \= 0, cases \= 1, maximum, minimum, count1 \= 0;\n\tfreopen("text", "r", stdin);\nreturn 0;\n}\n</template></templates>
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+removeTrailingWhitespace=false
+sourceHoverBackgroundColor=255,255,255
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

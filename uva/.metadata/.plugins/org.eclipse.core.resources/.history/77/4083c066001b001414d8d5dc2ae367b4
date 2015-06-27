@@ -1,0 +1,60 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+int no_length(unsigned long x) {
+	int len = 0;
+	while (x != 0) {
+		x /= 10;
+		len++;
+	}
+	return len;
+}
+int main() {
+	unsigned long l, a, b, c, m, n, i, x, y, j, k, t, sum = 0, cases = 1,
+			maximum, n_len, x_len, minimum, count1 = 0;
+	freopen("text", "r", stdin);
+	while (scanf("%ld", &n) != EOF) {
+		printf("-->n=%lu\n", n);
+		x = 1, count1 = 0;
+		n_len = no_length(n);
+		printf("n_len=%lu\n", n_len);
+		x_len = 1;
+		while (((double) x_len / 2) <= n_len) {
+			x = 1 << x_len;
+			count1++;
+			x_len++;
+		}
+		y = pow(10, x_len);
+		x /= y;
+		printf("x=%lu\n", x);
+		if (x == n)
+			printf("%lu\n", count1);
+		else
+			printf("no power of 2\n");
+	}
+	return 0;
+}

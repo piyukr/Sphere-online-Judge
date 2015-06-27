@@ -1,0 +1,26 @@
+15:47:13 **** Incremental Build of configuration Debug for project 10252 ****
+make all 
+Building file: ../10252.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"10252.d" -MT"10252.d" -o "10252.o" "../10252.cpp"
+../10252.cpp: In function ‘int main()’:
+../10252.cpp:30:6: warning: unused variable ‘l’ [-Wunused-variable]
+../10252.cpp:30:15: warning: unused variable ‘i’ [-Wunused-variable]
+../10252.cpp:30:24: warning: unused variable ‘j’ [-Wunused-variable]
+../10252.cpp:30:27: warning: unused variable ‘k’ [-Wunused-variable]
+../10252.cpp:30:30: warning: unused variable ‘t’ [-Wunused-variable]
+../10252.cpp:30:33: warning: unused variable ‘sum’ [-Wunused-variable]
+../10252.cpp:30:42: warning: unused variable ‘cases’ [-Wunused-variable]
+../10252.cpp:30:53: warning: unused variable ‘maximum’ [-Wunused-variable]
+../10252.cpp:30:62: warning: unused variable ‘minimum’ [-Wunused-variable]
+../10252.cpp:31:4: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../10252.cpp
+ 
+Building target: 10252
+Invoking: GCC C++ Linker
+g++  -o "10252"  ./10252.o   
+Finished building target: 10252
+ 
+
+15:47:13 Build Finished (took 615ms)
+

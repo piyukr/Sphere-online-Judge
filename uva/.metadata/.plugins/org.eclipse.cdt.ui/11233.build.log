@@ -1,0 +1,31 @@
+17:12:48 **** Incremental Build of configuration Debug for project 11233 ****
+make all 
+Building file: ../11233.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"11233.d" -MT"11233.d" -o "11233.o" "../11233.cpp"
+../11233.cpp: In function ‘int main()’:
+../11233.cpp:52:41: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 5 has type ‘long double’ [-Wformat]
+../11233.cpp:52:41: warning: format ‘%LF’ expects argument of type ‘long double’, but argument 9 has type ‘long unsigned int’ [-Wformat]
+../11233.cpp:30:20: warning: unused variable ‘l’ [-Wunused-variable]
+../11233.cpp:30:29: warning: unused variable ‘c’ [-Wunused-variable]
+../11233.cpp:30:32: warning: unused variable ‘m’ [-Wunused-variable]
+../11233.cpp:30:35: warning: unused variable ‘n’ [-Wunused-variable]
+../11233.cpp:30:41: warning: unused variable ‘x’ [-Wunused-variable]
+../11233.cpp:30:44: warning: unused variable ‘y’ [-Wunused-variable]
+../11233.cpp:30:50: warning: unused variable ‘k’ [-Wunused-variable]
+../11233.cpp:30:53: warning: unused variable ‘t’ [-Wunused-variable]
+../11233.cpp:30:56: warning: unused variable ‘sum’ [-Wunused-variable]
+../11233.cpp:30:65: warning: unused variable ‘cases’ [-Wunused-variable]
+../11233.cpp:31:4: warning: unused variable ‘maximum’ [-Wunused-variable]
+../11233.cpp:31:13: warning: unused variable ‘minimum’ [-Wunused-variable]
+../11233.cpp:31:22: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../11233.cpp
+ 
+Building target: 11233
+Invoking: GCC C++ Linker
+g++  -o "11233"  ./11233.o   
+Finished building target: 11233
+ 
+
+17:12:48 Build Finished (took 564ms)
+

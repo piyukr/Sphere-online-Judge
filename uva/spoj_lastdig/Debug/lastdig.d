@@ -1,0 +1,1 @@
+lastdig.d: ../lastdig.cpp

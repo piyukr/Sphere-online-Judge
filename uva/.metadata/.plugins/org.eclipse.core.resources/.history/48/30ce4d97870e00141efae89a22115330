@@ -1,0 +1,60 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+map<char, int> time1;
+vi dist(26, 9999);
+
+int main() {
+	int l, b, m, n, i, x, y, j, k, t, sum = 0, cases = 1, maximum, minimum,
+			count1 = 0;
+	char a, c;
+	scanf("%d", &t);
+	while (t--) {
+		scanf("\n");
+		minimum = 9999;
+		adj_list.assign(27, vii());
+		count1 = 0;
+		while (scanf("%c %d", &a, &b) == 2) {
+			while (1) {
+				scanf("%c", &c);
+				if (c == '\n')
+					break;
+				adj_list[a - 'A'].push_back(ii(c - 'A', -1 * b));
+			}
+				count1++;
+		}
+		printf("hi\n");
+		for (k = 0; k < count1 - 1; k++)
+			for (i = 0; i < count1; i++)
+				for (j = 0; j < adj_list[i].size(); j++) {
+					//printf("hi\n");
+					ii v = adj_list[i][j];
+					dist[v.first] = min(dist[v.first], dist[i] + v.second);
+					minimum = min(minimum, dist[v.first]);
+				}
+		printf("%d\n", -1 * minimum);
+		if (t != 0)
+			printf("\n");
+	}
+	return 0;
+}

@@ -1,0 +1,6 @@
+00:51:00 **** Incremental Build of configuration Debug for project spoj_candy1 ****
+make all 
+make: Nothing to be done for `all'.
+
+00:51:00 Build Finished (took 64ms)
+

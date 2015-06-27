@@ -1,0 +1,78 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+
+int main() {
+	int l, c, m, n, i, x, y, j, k, t, sum = 0, cases = 1, maximum, minimum,
+			count1 = 0;
+	freopen("text", "r", stdin);
+	while (1) {
+		int a, b, v, s, An, vert, hor;
+		double sx, sy, ux, uy, acx, acy, A;
+		scanf("%d%d%d%d%d", &a, &b, &v, &An, &s);
+		if (a == 0 && b == 0 && v == 0 && An == 0 && s == 0)
+			break;
+		A = ((double) An / (double) 180) * M_PI;
+		ux = abs((double) v * cos(A));
+		uy = abs((double) v * sin(A));
+		sx = sy = 0;
+		hor = 0, vert = 0;
+		if (An == 90) {
+			acy = uy / (double) s;
+			sy = abs(uy * uy / (2 * acy));
+		} else if (An == 0) {
+			acx = ux / (double) s;
+			sx = abs(ux * ux / (2 * acx));
+		} else {
+			if (ux > uy) {
+				acx = ux / (double) s;
+				acy = acx * sin(A) / cos(A);
+			} else {
+				acy = uy / (double) s;
+				acx = acy * cos(A) / sin(A);
+			}
+			sx = abs(ux * ux / (2 * acx));
+			sy = abs(uy * uy / (2 * acy));
+		}
+		//printf("%sx=%f,sy=%f:", sx, sy);
+		if (sx >= a / 2)
+			hor = 1;
+		if (sy >= b / 2)
+			vert = 1;
+		sx -= (double) a / 2;
+		sy -= (double) b / 2;
+		if (sx < 0)
+			sx = 0;
+		if (sy < 0)
+			sy = 0;
+		vert += (int) (sy / b);
+		hor += (int) (sx / a);
+		printf("%d %d\n", hor, vert);
+	}
+	return 0;
+}
+

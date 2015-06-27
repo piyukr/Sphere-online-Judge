@@ -1,0 +1,30 @@
+21:17:07 **** Incremental Build of configuration Debug for project 264 ****
+make all 
+Building file: ../264.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"264.d" -MT"264.d" -o "264.o" "../264.cpp"
+../264.cpp: In function ‘int main()’:
+../264.cpp:30:26: warning: unused variable ‘l’ [-Wunused-variable]
+../264.cpp:30:29: warning: unused variable ‘a’ [-Wunused-variable]
+../264.cpp:30:32: warning: unused variable ‘b’ [-Wunused-variable]
+../264.cpp:30:35: warning: unused variable ‘c’ [-Wunused-variable]
+../264.cpp:30:38: warning: unused variable ‘m’ [-Wunused-variable]
+../264.cpp:30:44: warning: unused variable ‘i’ [-Wunused-variable]
+../264.cpp:30:50: warning: unused variable ‘y’ [-Wunused-variable]
+../264.cpp:30:53: warning: unused variable ‘j’ [-Wunused-variable]
+../264.cpp:30:56: warning: unused variable ‘k’ [-Wunused-variable]
+../264.cpp:30:59: warning: unused variable ‘t’ [-Wunused-variable]
+../264.cpp:30:71: warning: unused variable ‘cases’ [-Wunused-variable]
+../264.cpp:31:19: warning: unused variable ‘maximum’ [-Wunused-variable]
+../264.cpp:31:28: warning: unused variable ‘minimum’ [-Wunused-variable]
+../264.cpp:31:37: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../264.cpp
+ 
+Building target: 264
+Invoking: GCC C++ Linker
+g++  -o "264"  ./264.o   
+Finished building target: 264
+ 
+
+21:17:08 Build Finished (took 548ms)
+

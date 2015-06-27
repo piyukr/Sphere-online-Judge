@@ -1,0 +1,53 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+int grid[1000][1000];
+int choices[1000];
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+
+int main() {
+	int l, a, b, c, m, n, i, x, y, j, k, t, sum = 0, cases = 1, maximum,
+			minimum, count1 = 0;
+	freopen("text", "r", stdin);
+	while (scanf("%d", &t) != EOF) {
+		x = 0;
+		memset(grid, 0, sizeof(grid));
+		memset(choices, 0, sizeof(choices));
+		scanf("%d", &n);
+		i = 0;
+		while (x < t) {
+			while (i < n) {
+				scanf("%d", &a);
+				grid[x][a] = 1;
+				i++;
+			}
+			rep(i,1,n-1)
+				rep(j,0,n-1)
+					if (grid[j][i] != 0)
+						choices[i] += grid[j][i];
+		}
+	}
+	return 0;
+}

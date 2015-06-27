@@ -1,0 +1,69 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+#include <tuple>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+
+vector<tuple<int, int, int, string> > vec;
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+
+struct CustomLessThan {
+	bool operator()(tuple<int, int, int, string> const &lhs,
+			tuple<int, int, int, string> const &rhs) const {
+		if (get<0>(lhs) != get<0>(rhs))
+			return get<0>(lhs) < get<0>(rhs);
+		if (get<1>(lhs) != get<1>(rhs))
+			return get<1>(lhs) < get<1>(rhs);
+		if (get<2>(lhs) != get<2>(rhs))
+			return get<2>(lhs) < get<2>(rhs);
+		/*	return get<3>(lhs) < get<3>(rhs);
+		 return (toupper(get<3>(lhs)) < toupper(get<3>(rhs));*/
+		 int m=
+}
+};
+
+int main() {
+	int l, a, b, c, m, s, ms, n, i, x, y, j, k, t, sum = 0, cases = 1, maximum,
+			minimum, count1 = 0;
+	char name1[100];
+	//freopen("text", "r", stdin);
+	while (cin >> t) {
+		count1 = 0;
+		while (t--) {
+			scanf("%s : %d min %d sec %d ms", name1, &m, &s, &ms);
+			string name(name1);
+			vec.push_back(make_tuple(m, s, ms, name));
+		}
+		sort(vec.begin(), vec.end(), CustomLessThan());
+		rep(i,0,(int)vec.size()-1)
+		{
+			if (i % 2 == 0)
+				printf("Row %d\n", ++count1);
+			cout << get<3>(vec[i]) << endl;
+		}
+		vec.clear();
+		cout << endl;
+	}
+	return 0;
+}

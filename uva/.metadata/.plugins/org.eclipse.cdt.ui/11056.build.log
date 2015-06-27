@@ -1,0 +1,37 @@
+17:14:57 **** Incremental Build of configuration Debug for project 11056 ****
+make all 
+Building file: ../11056.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"11056.d" -MT"11056.d" -o "11056.o" "../11056.cpp"
+In file included from /usr/include/c++/4.7/tuple:35:0,
+                 from ../11056.cpp:17:
+/usr/include/c++/4.7/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support is currently experimental, and must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+../11056.cpp:28:8: error: ‘tuple’ was not declared in this scope
+../11056.cpp:28:35: error: template argument 1 is invalid
+../11056.cpp:28:35: error: template argument 2 is invalid
+../11056.cpp:28:37: error: expected unqualified-id before ‘>’ token
+../11056.cpp: In function ‘int main()’:
+../11056.cpp:38:53: warning: format ‘%d’ expects argument of type ‘int*’, but argument 3 has type ‘int’ [-Wformat]
+../11056.cpp:38:53: warning: format ‘%d’ expects argument of type ‘int*’, but argument 4 has type ‘int’ [-Wformat]
+../11056.cpp:38:53: warning: format ‘%d’ expects argument of type ‘int*’, but argument 5 has type ‘int’ [-Wformat]
+../11056.cpp:40:4: error: ‘vec’ was not declared in this scope
+../11056.cpp:40:43: error: ‘make_tuple’ was not declared in this scope
+../11056.cpp:42:8: error: ‘vec’ was not declared in this scope
+../11056.cpp:47:12: error: ‘get’ was not declared in this scope
+../11056.cpp:32:6: warning: unused variable ‘l’ [-Wunused-variable]
+../11056.cpp:32:9: warning: unused variable ‘a’ [-Wunused-variable]
+../11056.cpp:32:12: warning: unused variable ‘b’ [-Wunused-variable]
+../11056.cpp:32:15: warning: unused variable ‘c’ [-Wunused-variable]
+../11056.cpp:32:28: warning: unused variable ‘n’ [-Wunused-variable]
+../11056.cpp:32:34: warning: unused variable ‘x’ [-Wunused-variable]
+../11056.cpp:32:37: warning: unused variable ‘y’ [-Wunused-variable]
+../11056.cpp:32:40: warning: unused variable ‘j’ [-Wunused-variable]
+../11056.cpp:32:43: warning: unused variable ‘k’ [-Wunused-variable]
+../11056.cpp:32:49: warning: unused variable ‘sum’ [-Wunused-variable]
+../11056.cpp:32:58: warning: unused variable ‘cases’ [-Wunused-variable]
+../11056.cpp:32:69: warning: unused variable ‘maximum’ [-Wunused-variable]
+../11056.cpp:33:4: warning: unused variable ‘minimum’ [-Wunused-variable]
+make: *** [11056.o] Error 1
+
+17:14:57 Build Finished (took 513ms)
+

@@ -1,0 +1,91 @@
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
+#include <sstream>
+#include <cstring>
+#include <string>
+#include <utility>
+#include <stack>
+#include <queue>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <functional>
+#include <cmath>
+#include <list>
+#include <set>
+using namespace std;
+
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define rep(i,a,b) for((i)=(a);(i)<=(b);(i)++)
+vector<vii> adj_list;
+
+vi dist;
+
+//BEFORE SUBMISSION, COMMENT OUT THIS LINE--> freopen("text", "r", stdin);
+
+int main() {
+	unsigned long int l, a, b, c, m, n, i, x, y, j, k, t, sum = 0, cases = 1,
+			maximum, minimum, count1 = 0;
+	freopen("text", "r", stdin);
+	scanf("%d", &t);
+	while (t--) {
+		scanf("%lu %lu", &a, &b);
+		a %= 10;
+		if (b == 0) {
+			printf("1\n");
+			continue;
+		}
+		switch (a) {
+		case 1: {
+			printf("1\n");
+			break;
+		}
+		case 2: {
+			b %= 4;
+			switch (b) {
+			case 0: {
+				printf("6\n");
+				break;
+			}
+			case 1: {
+				printf("2\n");
+				break;
+			}
+			case 2: {
+				printf("4\n");
+				break;
+			}
+			case 3: {
+				printf("8\n");
+				break;
+			}
+			}
+		}
+		case 3: {
+					b %= 4;
+					switch (b) {
+					case 0: {
+						printf("6\n");
+						break;
+					}
+					case 1: {
+						printf("2\n");
+						break;
+					}
+					case 2: {
+						printf("4\n");
+						break;
+					}
+					case 3: {
+						printf("8\n");
+						break;
+					}
+					}
+				}
+		}
+	}
+	return 0;
+}

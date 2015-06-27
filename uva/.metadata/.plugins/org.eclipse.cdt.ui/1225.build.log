@@ -1,0 +1,29 @@
+23:51:51 **** Incremental Build of configuration Debug for project 1225 ****
+make all 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.d" -o "main.o" "../main.cpp"
+../main.cpp: In function ‘int main()’:
+../main.cpp:30:6: warning: unused variable ‘l’ [-Wunused-variable]
+../main.cpp:30:9: warning: unused variable ‘a’ [-Wunused-variable]
+../main.cpp:30:12: warning: unused variable ‘b’ [-Wunused-variable]
+../main.cpp:30:15: warning: unused variable ‘c’ [-Wunused-variable]
+../main.cpp:30:18: warning: unused variable ‘m’ [-Wunused-variable]
+../main.cpp:30:27: warning: unused variable ‘x’ [-Wunused-variable]
+../main.cpp:30:30: warning: unused variable ‘y’ [-Wunused-variable]
+../main.cpp:30:36: warning: unused variable ‘k’ [-Wunused-variable]
+../main.cpp:30:42: warning: unused variable ‘sum’ [-Wunused-variable]
+../main.cpp:30:51: warning: unused variable ‘cases’ [-Wunused-variable]
+../main.cpp:30:62: warning: unused variable ‘maximum’ [-Wunused-variable]
+../main.cpp:31:4: warning: unused variable ‘minimum’ [-Wunused-variable]
+../main.cpp:31:13: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../main.cpp
+ 
+Building target: 1225
+Invoking: GCC C++ Linker
+g++  -o "1225"  ./main.o   
+Finished building target: 1225
+ 
+
+23:51:52 Build Finished (took 736ms)
+

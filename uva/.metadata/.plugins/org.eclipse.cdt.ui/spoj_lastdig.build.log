@@ -1,0 +1,16 @@
+21:29:31 **** Build of configuration Debug for project spoj_lastdig ****
+make all 
+Building file: ../lastdig.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lastdig.d" -MT"lastdig.d" -o "lastdig.o" "../lastdig.cpp"
+../lastdig.cpp: In function ‘int main()’:
+../lastdig.cpp:19:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../lastdig.cpp:25:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../lastdig.cpp:31:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../lastdig.cpp:41:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../lastdig.cpp:47:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+../lastdig.cpp:53:32: error: invalid operands of types ‘double’ and ‘int’ to binary ‘operator%’
+make: *** [lastdig.o] Error 1
+
+21:29:32 Build Finished (took 999ms)
+

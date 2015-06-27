@@ -1,0 +1,32 @@
+10:39:10 **** Incremental Build of configuration Debug for project 443 ****
+make all 
+Building file: ../443.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"443.d" -MT"443.d" -o "443.o" "../443.cpp"
+../443.cpp: In function ‘int main()’:
+../443.cpp:31:20: warning: unused variable ‘l’ [-Wunused-variable]
+../443.cpp:31:23: warning: unused variable ‘a’ [-Wunused-variable]
+../443.cpp:31:26: warning: unused variable ‘b’ [-Wunused-variable]
+../443.cpp:31:29: warning: unused variable ‘c’ [-Wunused-variable]
+../443.cpp:31:32: warning: unused variable ‘m’ [-Wunused-variable]
+../443.cpp:31:38: warning: unused variable ‘i’ [-Wunused-variable]
+../443.cpp:31:41: warning: unused variable ‘x’ [-Wunused-variable]
+../443.cpp:31:44: warning: unused variable ‘y’ [-Wunused-variable]
+../443.cpp:31:47: warning: unused variable ‘j’ [-Wunused-variable]
+../443.cpp:31:50: warning: unused variable ‘k’ [-Wunused-variable]
+../443.cpp:31:53: warning: unused variable ‘t’ [-Wunused-variable]
+../443.cpp:31:56: warning: unused variable ‘sum’ [-Wunused-variable]
+../443.cpp:31:65: warning: unused variable ‘cases’ [-Wunused-variable]
+../443.cpp:32:4: warning: unused variable ‘maximum’ [-Wunused-variable]
+../443.cpp:32:13: warning: unused variable ‘minimum’ [-Wunused-variable]
+../443.cpp:32:22: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../443.cpp
+ 
+Building target: 443
+Invoking: GCC C++ Linker
+g++  -o "443"  ./443.o   
+Finished building target: 443
+ 
+
+10:39:11 Build Finished (took 957ms)
+

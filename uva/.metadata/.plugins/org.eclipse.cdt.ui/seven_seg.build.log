@@ -1,0 +1,30 @@
+12:53:51 **** Incremental Build of configuration Debug for project seven_seg ****
+make all 
+Building file: ../seven_seg.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"seven_seg.d" -MT"seven_seg.d" -o "seven_seg.o" "../seven_seg.cpp"
+../seven_seg.cpp: In function ‘int main()’:
+../seven_seg.cpp:32:6: warning: unused variable ‘l’ [-Wunused-variable]
+../seven_seg.cpp:32:9: warning: unused variable ‘a’ [-Wunused-variable]
+../seven_seg.cpp:32:12: warning: unused variable ‘b’ [-Wunused-variable]
+../seven_seg.cpp:32:25: warning: unused variable ‘c’ [-Wunused-variable]
+../seven_seg.cpp:32:28: warning: unused variable ‘m’ [-Wunused-variable]
+../seven_seg.cpp:32:34: warning: unused variable ‘i’ [-Wunused-variable]
+../seven_seg.cpp:32:37: warning: unused variable ‘x’ [-Wunused-variable]
+../seven_seg.cpp:32:40: warning: unused variable ‘y’ [-Wunused-variable]
+../seven_seg.cpp:32:43: warning: unused variable ‘j’ [-Wunused-variable]
+../seven_seg.cpp:32:46: warning: unused variable ‘k’ [-Wunused-variable]
+../seven_seg.cpp:32:52: warning: unused variable ‘sum’ [-Wunused-variable]
+../seven_seg.cpp:33:4: warning: unused variable ‘maximum’ [-Wunused-variable]
+../seven_seg.cpp:33:13: warning: unused variable ‘minimum’ [-Wunused-variable]
+../seven_seg.cpp:33:22: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../seven_seg.cpp
+ 
+Building target: seven_seg
+Invoking: GCC C++ Linker
+g++  -o "seven_seg"  ./seven_seg.o   
+Finished building target: seven_seg
+ 
+
+12:53:52 Build Finished (took 667ms)
+

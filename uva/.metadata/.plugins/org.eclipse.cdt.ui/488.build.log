@@ -1,0 +1,29 @@
+00:23:18 **** Incremental Build of configuration Debug for project 488 ****
+make all 
+Building file: ../488.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"488.d" -MT"488.d" -o "488.o" "../488.cpp"
+../488.cpp: In function ‘int main()’:
+../488.cpp:30:6: warning: unused variable ‘l’ [-Wunused-variable]
+../488.cpp:30:9: warning: unused variable ‘a’ [-Wunused-variable]
+../488.cpp:30:12: warning: unused variable ‘b’ [-Wunused-variable]
+../488.cpp:30:15: warning: unused variable ‘c’ [-Wunused-variable]
+../488.cpp:30:27: warning: unused variable ‘x’ [-Wunused-variable]
+../488.cpp:30:30: warning: unused variable ‘y’ [-Wunused-variable]
+../488.cpp:30:36: warning: unused variable ‘k’ [-Wunused-variable]
+../488.cpp:30:39: warning: unused variable ‘t’ [-Wunused-variable]
+../488.cpp:30:42: warning: unused variable ‘sum’ [-Wunused-variable]
+../488.cpp:30:51: warning: unused variable ‘cases’ [-Wunused-variable]
+../488.cpp:30:62: warning: unused variable ‘maximum’ [-Wunused-variable]
+../488.cpp:31:4: warning: unused variable ‘minimum’ [-Wunused-variable]
+../488.cpp:31:13: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../488.cpp
+ 
+Building target: 488
+Invoking: GCC C++ Linker
+g++  -o "488"  ./488.o   
+Finished building target: 488
+ 
+
+00:23:18 Build Finished (took 562ms)
+

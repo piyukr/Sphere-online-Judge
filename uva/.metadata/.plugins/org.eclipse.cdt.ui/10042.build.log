@@ -1,0 +1,31 @@
+11:19:15 **** Incremental Build of configuration Debug for project 10042 ****
+make all 
+Building file: ../10042.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"10042.d" -MT"10042.d" -o "10042.o" "../10042.cpp"
+../10042.cpp: In function ‘void findprimes()’:
+../10042.cpp:35:3: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../10042.cpp: In function ‘int main()’:
+../10042.cpp:73:5: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../10042.cpp:87:4: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../10042.cpp:57:20: warning: unused variable ‘l’ [-Wunused-variable]
+../10042.cpp:57:23: warning: unused variable ‘a’ [-Wunused-variable]
+../10042.cpp:57:26: warning: unused variable ‘b’ [-Wunused-variable]
+../10042.cpp:57:29: warning: unused variable ‘c’ [-Wunused-variable]
+../10042.cpp:57:41: warning: unused variable ‘x’ [-Wunused-variable]
+../10042.cpp:57:44: warning: unused variable ‘y’ [-Wunused-variable]
+../10042.cpp:57:47: warning: unused variable ‘j’ [-Wunused-variable]
+../10042.cpp:57:65: warning: unused variable ‘cases’ [-Wunused-variable]
+../10042.cpp:58:4: warning: unused variable ‘maximum’ [-Wunused-variable]
+../10042.cpp:58:13: warning: unused variable ‘minimum’ [-Wunused-variable]
+../10042.cpp:58:41: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../10042.cpp
+ 
+Building target: 10042
+Invoking: GCC C++ Linker
+g++  -o "10042"  ./10042.o   
+Finished building target: 10042
+ 
+
+11:19:15 Build Finished (took 711ms)
+

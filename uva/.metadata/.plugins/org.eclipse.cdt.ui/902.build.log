@@ -1,0 +1,27 @@
+16:52:57 **** Incremental Build of configuration Debug for project 902 ****
+make all 
+Building file: ../902.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"902.d" -MT"902.d" -o "902.o" "../902.cpp"
+../902.cpp: In function ‘int main()’:
+../902.cpp:30:6: warning: unused variable ‘l’ [-Wunused-variable]
+../902.cpp:30:9: warning: unused variable ‘m’ [-Wunused-variable]
+../902.cpp:30:18: warning: unused variable ‘x’ [-Wunused-variable]
+../902.cpp:30:21: warning: unused variable ‘y’ [-Wunused-variable]
+../902.cpp:30:24: warning: unused variable ‘j’ [-Wunused-variable]
+../902.cpp:30:27: warning: unused variable ‘k’ [-Wunused-variable]
+../902.cpp:30:30: warning: unused variable ‘t’ [-Wunused-variable]
+../902.cpp:30:33: warning: unused variable ‘sum’ [-Wunused-variable]
+../902.cpp:30:42: warning: unused variable ‘cases’ [-Wunused-variable]
+../902.cpp:30:62: warning: unused variable ‘minimum’ [-Wunused-variable]
+../902.cpp:31:4: warning: unused variable ‘count1’ [-Wunused-variable]
+Finished building: ../902.cpp
+ 
+Building target: 902
+Invoking: GCC C++ Linker
+g++  -o "902"  ./902.o   
+Finished building target: 902
+ 
+
+16:52:58 Build Finished (took 722ms)
+

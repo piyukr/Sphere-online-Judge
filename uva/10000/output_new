@@ -1,0 +1,24 @@
+1
+0->
+1->2 
+2->
+The longest path from 1 has length -9999, finishing at 4198740.
+
+3
+0->
+1->2 
+2->4 
+3->5 1 
+4->5 
+5->
+The longest path from 3 has length -9999, finishing at 4198740.
+
+5
+0->
+1->
+2->
+3->
+4->1 2 
+5->1 2 3 4 
+The longest path from 5 has length -9999, finishing at 4198740.
+

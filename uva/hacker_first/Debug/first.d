@@ -1,0 +1,1 @@
+first.d: ../first.cpp
